@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="src/images/suber.png" id="nav_logo" alt="">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Página inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Locação</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                <a href="#login">Login</a>
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Página inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Locação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#login">Sobre</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Login
+            </button>
+            
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+
+            <div id="cta">
+                <h1 class="title">
+                    <span>Conduza o Futuro:</span> Seu Destino, Nossa Jornada!
+                </h1>
+
+                <p class="description">
+                    Viaje conosco, solicite um carro e curta sua viajem!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        CONSULTAR PREÇOS
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 99515-7614
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/Página_incial.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Recomendados</h2>
+            <h3 class="section-subtitle">Nossos melhores carros</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/Lancer.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Lancer
+                    </h3>
+
+                    <span class="dish-description">
+                        
+                        O Mitsubishi Lancer é um sedã compacto produzido pela Mitsubishi Motors. Conhecido por seu design dinâmico e confiabilidade, o Lancer combina estilo, desempenho e eficiência. Com opções de motorização versáteis, atende às diversas necessidades dos motoristas. oferecendo uma experiência de direção ágil.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 57.500</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/Land Rover.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Land Rover Evoque
+                    </h3>
+
+                    <span class="dish-description">
+                        
+                        
+O Land Rover Evoque é um SUV compacto de luxo produzido pela prestigiosa marca britânica Land Rover. Reconhecido por seu design distinto, sofisticação e capacidades off-road impressionantes, o Evoque combina elegância urbana com desempenho robusto, estabelecendo-se como um dos SUVs mais desejados do mercado global.                    
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 75.000</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/Honda Civic.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Honda Civic
+                    </h3>
+
+                    <span class="dish-description">
+                        O Honda Civic é um sedã compacto produzido pela renomada marca japonesa Honda. Reconhecido por seu design moderno, confiabilidade e eficiência, o Civic oferece uma combinação equilibrada de estilo, desempenho e tecnologia, tornando-se um dos carros mais populares e vendidos em todo o mundo.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 259.900</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/Amg.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Amg A 45
+                    </h3>
+
+                    <span class="dish-description">
+                        O Mercedes-AMG A 45 é um hatchback de alto desempenho produzido pela divisão de veículos esportivos da Mercedes-Benz, a AMG. Este carro combina o design elegante e compacto do Classe A com um motor potente e tecnologia avançada, oferecendo uma experiência de condução emocionante.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$622.900</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+
+            <main id="container">
+                <form id="login_form">
+
+                    <div id="form_header">
+                        <h1>Login</h1>
+                    </div>
+        
+    
+                    <!-- INPUTS -->
+                    <div id="inputs">
+                        <!-- NAME -->
+                        <div class="input-box">
+                            <label for="name">
+                                Name
+                                <div class="input-field">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- CPF -->
+                        <div class="input-box">
+                            <label for="cpf">
+                                CPF
+                                <div class="input-field">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <!-- EMAIL -->
+                        <div class="input-box">
+                            <label for="email">
+                                E-mail
+                                <div class="input-field">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="email" id="email" name="email">
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <!-- PASSWORD -->
+                        <div class="input-box">
+                            <label for="password">
+                                Password
+                                <div class="input-field">
+                                    <i class="fa-solid fa-key"></i>
+                                    <input type="password" id="password" name="password">
+                                </div>
+                            </label>
+                            
+                        </div>
+                    </div>
+        
+                    <!-- LOGIN BUTTON -->
+                    <button type="submit" id="login_button">
+                        Login
+                    </button>
+                </form>
+            </main>
+
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Artur da Silva e Júlia Gomes
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
