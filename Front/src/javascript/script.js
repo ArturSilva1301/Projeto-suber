@@ -58,3 +58,37 @@ $(document).ready(function() {
         distance: '20%'
     })
 });
+
+// API
+
+let button = document.getElementById('login_button');
+
+button.onclick = async function(e) {
+    e.preventDefault();
+    //cancela o comportamento padrão de um formulario, tem que colocar o "e" no parametro
+    
+    let CPF = document.getElementById('CPF').value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let data = {CPF, name, email, password}
+
+    const response = await fetch('http://localhost:3010/api/store/task', {
+        method: "POST",
+        headers: {"Content-type": "application/json;charset=UTF-8"},
+        body: JSON.stringify(data)
+    });
+
+    let content = await response.json();
+
+    console.log(content);
+
+    if (content.sucess) {
+        alert ("Sucesso!!");
+        window.location.reload();
+        //recarrega a página
+    } else {
+        console.error()
+        alert("Não deu!!");
+    };
+};

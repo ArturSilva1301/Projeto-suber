@@ -3,13 +3,13 @@ const dotenv = require('dotenv').config();
 
 async function storeTask(request, response) {
     const params = Array(
+        request.body.CPF,
         request.body.name,
         request.body.email,
-        request.body.password,
-        request.body.CPF
+        request.body.password
     )
 
-    const query = "INSERT INTO users(name, email, password, CPF) VALUES(?,?,?)";
+    const query = "INSERT INTO users(CPF, name, email, password) VALUES(?,?,?,?)";
 
     connection.query(query, params, (err, results) => {
         if(results) {
